@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function mainInit() {
 
     // LENIS
     window.lenis = new Lenis(); // globally available
@@ -41,6 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-});
+    console.log("Loading mainInit()");
 
-console.log("running relume scripts");
+}

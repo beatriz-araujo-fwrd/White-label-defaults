@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function form() {
 
     // Form validation
     if (document.querySelector('.section_contact_form')) {
@@ -74,4 +74,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-});
+    console.log("Loading form()");
+}

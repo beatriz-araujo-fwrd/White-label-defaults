@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function navBarMenu() {
     // ---------------------------------------
     // NAV MENU
     const trigger = document.querySelector('#menu-trigger');
@@ -328,5 +328,6 @@ document.addEventListener("DOMContentLoaded", function () {
         cache.set("current", first);
     }
 
+    console.log("running navBarMenu()");
 
-});
+}
