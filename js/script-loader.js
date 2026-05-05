@@ -1,6 +1,7 @@
 import { mainInit } from './main.js';
 import { navBarMenu } from './menu.js';
 import { swiperInit } from './swiper.js';
+import { works } from './works.js';
 import { form } from './form.js';
 import { footerDate } from './footer-date.js';
 
@@ -9,6 +10,7 @@ import { footerDate } from './footer-date.js';
 mainInit();
 navBarMenu();
 swiperInit();
+works();
 form();
 footerDate();
 
