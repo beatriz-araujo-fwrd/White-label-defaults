@@ -41,6 +41,20 @@ export function mainInit() {
         }
     });
 
+    // Copy link share
+    const copyShare = document.querySelectorAll(".copy-to-clipboard");
+    copyShare?.forEach(shareBtn => {
+        shareBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            let tooltip = shareBtn.querySelector(".tooltip");
+            tooltip?.classList.add("show");
+            setTimeout(() => {
+                tooltip?.classList.remove("show");
+            }, 1500);
+            navigator.clipboard.writeText(location.href);
+        });
+    });
+
     console.log("Loading mainInit()");
 
 }
